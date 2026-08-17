@@ -18,10 +18,6 @@ Simply open the `index.html` file in any modern web browser. No installation or 
 3. Adjust the **Steering Angle** to see how the geometry reacts.
 4. Copy the calculated **Inner** and **Outer** bearing angles into your Scrap Mechanic Level 5 Seat settings.
 
-## Author
-
-Created by [Hypnos-IT](https://github.com/Hypnos-IT).
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
