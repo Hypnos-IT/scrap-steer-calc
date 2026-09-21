@@ -20,6 +20,19 @@ Try the live version at **[Scrap Steer Calc](https://hypnos-it.github.io/scrap-s
 3. Adjust the **Steering Angle** to see how the geometry reacts.
 4. Copy the calculated **Inner** and **Outer** steering angles into your bearing settings in Scrap Mechanic.
 
+---
+
+## Support me
+
+If this is usefull, consider buying me a coffee or supporting my work:
+
+[![GitHub Sponsors](https://img.shields.io/badge/GitHub_Sponsors-EA4AAA?style=for-the-badge&logo=githubsponsors&logoColor=white)](https://github.com/sponsors/Hypnos-IT)
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/hypnosit)
+
+Every bit of support helps and i like coffee.
+
+---
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
