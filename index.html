@@ -464,8 +464,7 @@
             </div>
             <div class="result-item" id="cardAxle">
                 <span class="result-label">Center Bearing<br>(Main Axle)</span>
-                <span class="result-value axle-val" id="resAxle">0.0°</span>
-                <span class="seat-approx" id="seatAxle">approx. ~0°</span>
+                <span class="result-value axle-val" id="resAxle">0°</span>
             </div>
             <div class="result-item" id="cardRight">
                 <span class="result-label" id="lblResRight">Right Bearing<br>(Inner Wheel)</span>
@@ -559,7 +558,6 @@
             lblResRight: document.getElementById('lblResRight'),
 
             seatLeft: document.getElementById('seatLeft'),
-            seatAxle: document.getElementById('seatAxle'),
             seatRight: document.getElementById('seatRight'),
 
             // Buttons
@@ -920,22 +918,19 @@
                 valRight = betaOutDeg;
             }
 
-            ui.resAxle.textContent = gammaDeg.toFixed(1) + '°';
+            ui.resAxle.textContent = Math.round(gammaDeg) + '°';
             ui.resLeft.textContent = valLeft.toFixed(1) + '°';
             ui.resRight.textContent = valRight.toFixed(1) + '°';
 
             // Integer degree seat approximation in Blocks mode
             if (currentUnit === 'blocks') {
                 ui.seatLeft.style.display = 'block';
-                ui.seatAxle.style.display = 'block';
                 ui.seatRight.style.display = 'block';
 
                 ui.seatLeft.textContent = 'approx. ~' + Math.round(valLeft) + '°';
-                ui.seatAxle.textContent = 'approx. ~' + Math.round(gammaDeg) + '°';
                 ui.seatRight.textContent = 'approx. ~' + Math.round(valRight) + '°';
             } else {
                 ui.seatLeft.style.display = 'none';
-                ui.seatAxle.style.display = 'none';
                 ui.seatRight.style.display = 'none';
             }
 
