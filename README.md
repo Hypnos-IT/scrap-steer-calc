@@ -1,30 +1,32 @@
 # Ackermann Steering Geometry Calculator
 
-An interactive Ackermann steering geometry calculator and visualizer designed for **Scrap Mechanic** builders
-(with real-world units toggle). Calculate exact steering angles for your wheels and optimize your vehicle's handling.
+A simple browser tool for Scrap Mechanic builders to calculate proper Ackermann steering angles. It works with standard blocks as well as metric (meters) and imperial (feet) units, preventing wheels from dragging or slipping during sharp turns.
 
-## Features
+Live version: **[Scrap Steer Calc](https://hypnos-it.github.io/scrap-steer-calc/)**
 
-- **Interactive Visualizer** - real-time visual representation of the steering geometry and the Instantaneous Center of Rotation (ICR).
-- **Unit Toggle** - switch between Scrap Mechanic Blocks and standard Meters.
-- **Accurate Angle Output** - calculates precise angles for the inner and outer wheels (bearings).
-- **Hybrid steering** - if you want to use combined steering (rotating axle + rotating wheels).
-- **Builder's Tips** - minimalistic FAQ section.
+You can also download `index.html` and open it directly in any browser for offline use.
 
-## How to Use
+## What it does
 
-Try the live version at **[Scrap Steer Calc](https://hypnos-it.github.io/scrap-steer-calc/)**, or download and open `index.html` file in any web browser for the offline use.
+- Draws your vehicle chassis, wheels, and rotation center (ICR) in real time on canvas.
+- Lets you switch between in-game blocks, meters, and feet.
+- Supports both left and right turns with correct bearing readouts for each side.
+- Handles hybrid setups that combine a pivoting front axle with steering bearings.
+- Provides rounded degree values ready to plug into a Level 5 Driver's Seat.
+- Includes quick tips on measuring wheelbase and track width accurately in-game.
 
-1. Measure your vehicle's **Wheelbase (L)** and **Track Width (W)**.
-2. Enter the values into the calculator.
-3. Adjust the **Steering Angle** to see how the geometry reacts.
-4. Copy the calculated **Inner** and **Outer** steering angles into your bearing settings in Scrap Mechanic.
+## How to use it
+
+1. Count your vehicle's wheelbase (length) and track width (width). Subtract 1 block from each measurement since bearings pivot at their center.
+2. Enter the numbers into the calculator.
+3. Set your steering angle (and axle angle if using a hybrid steering setup).
+4. Enter the calculated bearing angles into your steering bearings in Scrap Mechanic.
 
 ---
 
-## Support me
+## Support
 
-If this is usefull, consider buying me a coffee or supporting my work:
+If you find this tool helpful, consider buying me a coffee or supporting my work:
 
 [![GitHub Sponsors](https://img.shields.io/badge/GitHub_Sponsors-EA4AAA?style=for-the-badge&logo=githubsponsors&logoColor=white)](https://github.com/sponsors/Hypnos-IT)
 [![Ko-fi](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/hypnosit)
@@ -35,4 +37,4 @@ Every bit of support helps and I like coffee :]
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
